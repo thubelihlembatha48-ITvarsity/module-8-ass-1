@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="font-awesome/css/all.css">
+    </head>
+    
+    <body>
+         <p class="heading">Welcome. Please log in</p>
+
+         <form>
+             <label for="usernameInput">Username <i class="fas fa-user"></i> </label><input type="text" id="usernameInput"/><br/>
+             <label for="passwordInput">Password <i class="fas fa-lock"></i> </label><input type="password" id="passwordInput"/>
+                 <br/><br/>
+            <a class="login" href="#" onclick="verifyUser()">Log in</a>
+                 <br/><br/>
+                 <p id="message"></p>
+                 <br/><br/><br/>
+            <a id="p1" href="#"><p1>forgot password?</p1></a>
+         </form>
+        <script>
+            function verifyUser(){
+               var username = document.getElementById("usernameInput").value;
+               var password = document.getElementById("passwordInput").value;
+
+               checkUserCreds(username, password);
+            }
+
+            function checkUserCreds(username, password){
+                var systemUsername = "Bond";
+                var systemPassword = "007";
+
+                if(username == systemUsername && password == systemPassword){
+                    document.getElementById("message").innerHTML = "Correct. Logging you in..."
+                }else{ document.getElementById("message").innerHTML = "Username or Password are Incorrect."
+
+                }
+            }
+        </script>
+    </body>
+</html>

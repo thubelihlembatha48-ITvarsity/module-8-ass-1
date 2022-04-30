@@ -1,0 +1,60 @@
+body{
+    background-image: url("images/aaron-burden-cEukkv42O40-unsplash.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+    text-align: center;
+    color: teal;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 100px; 
+}
+
+p{
+    color: rgb(7, 32, 32);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+form{
+   position: static;
+   height: 300px;
+   margin: 500px;
+   margin-top: 25px !important;
+   text-align: center;
+   background-color: rgba(187, 179, 184, 0.2);
+   border: 1px solid #292c2a;
+   border-radius: 10px;
+}
+
+label{
+    padding: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: rgb(160, 128, 100);
+}
+
+.login{
+    color: rgb(184, 174, 88);
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#p1{
+    color: #e2b36b;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.login:hover{
+color: rgb(142, 150, 119) ;
+}
+
+#p1:hover{
+    color: rgb(26, 82, 82) ;
+    }
+
